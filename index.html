@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sunrise Sunset App</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <header>
+            <h1>Sunrise Sunset Information</h1>
+            <h3>ITMD 541 - Lab 4 - Pooja Bendale</h3>
+        </header> -->
+
+
+        <div id="headerWrapper">
+            ITMD 541 - Lab 4 - Pooja Bendale
+            <br>
+            <br>
+        </div>
+        <br>
+        <div id="formIndent">
+            <h1>Sunrise-Sunset API</h1>
+            <input type="text" id="locationInput" required>
+            <div id="buttonAlignemnt">
+                <button id="searchBtn"> Enter </button>
+                <button id="currentLcBtn"> Get Location </button>
+
+            </div>
+        </div>
+
+        <!-- <div class="search-container buttonAlignemnt">
+            <input type="text" id="locationInput">
+            <button id="searchButton">Search</button>
+            <button id="currentLocationButton">Get Location</button>
+        </div> -->
+
+
+        <div id="sunriseSunsetInfo">
+            <div id="locationInfo">
+                <p id="locName"></p>
+            </div>
+            <div id="today" class="popup">
+                <h2>Today Report</h2>
+                <p>Today: <strong><span id="todayDate"></span></strong></p>
+                <p>Sunrise: <strong><span id="sunrise"></span></strong></p>
+                <p>Sunset: <strong><span id="sunset"></span></strong></p>
+                <p>Dawn: <strong><span id="dawn"></span></strong></p>
+                <p>Dusk: <strong><span id="dusk"></span></strong></p>
+                <p>Solar Noon: <strong><span id="solarnoon"></span></strong></p>
+                <p>Day Length: <strong><span id="daylength"></span></strong></p>
+                <p id="timezone"> TimeZone: <strong><span id="tz"></span></strong></p>
+            </div>
+
+            <div id="tomorrow" class="popup">
+                <h2>Tomorrow Report</h2>
+                <p><strong>Date:</strong> <span id="tommDate"></span></p>
+                <p><strong>Sunrise:</strong> <span id="sunriseT"></span></p>
+                <p><strong>Sunset:</strong> <span id="sunsetT"></span></p>
+                <p><strong>Dawn:</strong> <span id="dawnT"></span></p>
+                <p><strong>Dusk:</strong> <span id="duskT"></span></p>
+                <p><strong>Solar Noon:</strong> <span id="solarnoonT"></span></p>
+                <p><strong>Day Length:</strong> <span id="daylengthT"></span></p>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
