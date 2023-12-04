@@ -4,69 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="new-style.css">
     <title>Sunrise Sunset App</title>
+
+
+
+
 </head>
 
 <body>
-    <div class="container">
-        <!-- <header>
-            <h1>Sunrise Sunset Information</h1>
-            <h3>ITMD 541 - Lab 4 - Pooja Bendale</h3>
-        </header> -->
+    <div class="app-container">
+        <header>
+            <h1><u>Sunrise Sunset</u></h1>
+            <p class="lab-info">ITMD 541 - Lab 4 - Pooja Bendale</p>
+        </header>
 
-
-        <div id="headerWrapper">
-            ITMD 541 - Lab 4 - Pooja Bendale
-            <br>
-            <br>
-        </div>
-        <br>
-        <div id="formIndent">
-            <h1>Sunrise-Sunset API</h1>
-            <input type="text" id="locationInput" required>
-            <div id="buttonAlignemnt">
-                <button id="searchBtn"> Enter </button>
-                <button id="currentLcBtn"> Get Location </button>
-
+        <section class="search-section">
+            <div class="search-box">
+                <h2>Find Information</h2>
+                <input type="text" id="locationInput" placeholder="Enter location" required>
+                <div class="button-container">
+                    <button id="searchBtn">Search</button>
+                    <button id="currentLcBtn">Get Location </button>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!-- <div class="search-container buttonAlignemnt">
-            <input type="text" id="locationInput">
-            <button id="searchButton">Search</button>
-            <button id="currentLocationButton">Get Location</button>
-        </div> -->
-
-
-        <div id="sunriseSunsetInfo">
-            <div id="locationInfo">
-                <p id="locName"></p>
+        <section class="info-section">
+            <div class="location-info">
+                <h2 id="locName"></h2>
             </div>
-            <div id="today" class="popup">
-                <h2>Today Report</h2>
-                <p>Today: <strong><span id="todayDate"></span></strong></p>
-                <p>Sunrise: <strong><span id="sunrise"></span></strong></p>
-                <p>Sunset: <strong><span id="sunset"></span></strong></p>
-                <p>Dawn: <strong><span id="dawn"></span></strong></p>
-                <p>Dusk: <strong><span id="dusk"></span></strong></p>
-                <p>Solar Noon: <strong><span id="solarnoon"></span></strong></p>
-                <p>Day Length: <strong><span id="daylength"></span></strong></p>
-                <p id="timezone"> TimeZone: <strong><span id="tz"></span></strong></p>
+            <div style="width: 50%; height: 310px; float: left; background: #5ae958;"
+                class="report today">
+                <h3><u><i>Today's Report</u></i></h3>
+                <p>Date: <span id="todayDate"></span></p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>
+                <p>Dawn: <span id="dawn"></span></p>
+                <p>Dusk: <span id="dusk"></span></p>
+                <p>Solar Noon: <span id="solarnoon"></span></p>
+                <p>Day Length: <span id="daylength"></span></p>
+                <p id="timezone">TimeZone: <span id="tz"></span></p>
             </div>
 
-            <div id="tomorrow" class="popup">
-                <h2>Tomorrow Report</h2>
-                <p><strong>Date:</strong> <span id="tommDate"></span></p>
-                <p><strong>Sunrise:</strong> <span id="sunriseT"></span></p>
-                <p><strong>Sunset:</strong> <span id="sunsetT"></span></p>
-                <p><strong>Dawn:</strong> <span id="dawnT"></span></p>
-                <p><strong>Dusk:</strong> <span id="duskT"></span></p>
-                <p><strong>Solar Noon:</strong> <span id="solarnoonT"></span></p>
-                <p><strong>Day Length:</strong> <span id="daylengthT"></span></p>
-                
+            <div style="margin-left: 50%; height: 310px; background: rgb(84, 188, 233);"
+                class="report tomorrow">
+                <h3><u><i>Tomorrow's Report</u></i></h3>
+                <p>Date: <span id="tommDate"></span></p>
+                <p>Sunrise: <span id="sunriseT"></span></p>
+                <p>Sunset: <span id="sunsetT"></span></p>
+                <p>Dawn: <span id="dawnT"></span></p>
+                <p>Dusk: <span id="duskT"></span></p>
+                <p>Solar Noon: <span id="solarnoonT"></span></p>
+                <p>Day Length: <span id="daylengthT"></span></p>
             </div>
-        </div>
+        </section>
     </div>
 
     <script src="app.js" type="text/javascript"></script>
